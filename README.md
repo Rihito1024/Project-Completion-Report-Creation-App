@@ -1,19 +1,19 @@
 # Report App (MVP)
 
-Streamlit app to generate a PPTX report from inputs and uploaded files.
+入力内容とアップロードしたファイルからPPTXの報告書を生成するStreamlitアプリです。
 
-## Run locally
+## ローカルで起動
 
 ```bash
 pip install -r requirements.txt
 streamlit run app/streamlit_app.py
 ```
 
-## LLM settings
+## LLM設定
 
-The app reads environment variables (it loads `.env` automatically at startup).
+アプリは環境変数を参照します（起動時に `.env` を自動で読み込みます）。
 
-Example `.env`:
+`.env` の例:
 
 ```
 LLM_PROVIDER=gemini
@@ -24,15 +24,15 @@ GEMINI_IMAGE_SIZE=2K
 IMAGE_PROVIDER=gemini
 ```
 
-Supported providers:
+対応プロバイダ:
 - `openai`
 - `anthropic`
 - `gemini`
 
 ## Cloud Run
 
-Build and deploy using the included `Dockerfile`.
+同梱の `Dockerfile` を使ってビルド・デプロイできます。
 
-## Template
+## テンプレート
 
-The app uses `app/templates/review_template.pptx` by default. Replace it with your own template as needed, keeping shape names aligned with `app/config/slide_bindings.py`.
+デフォルトでは `app/templates/review_template.pptx` を使用します。必要に応じて差し替えてください（`app/config/slide_bindings.py` と形状名が一致している必要があります）。
