@@ -161,7 +161,6 @@ def generate_slide_draft(normalized_input: NormalizedInput, project_meta: Dict[s
         "slide3": {
             "project_name": project_meta.get("project_name", ""),
             "member": "",
-            "period_and_price": "",
             "project_overview": "",
             "success": "",
             "challenge": "",
@@ -177,8 +176,7 @@ def generate_slide_draft(normalized_input: NormalizedInput, project_meta: Dict[s
         "background": ("slide2_background.txt", manual.get("summary", "")),
         "challenge": ("slide2_challenge.txt", manual.get("summary", "")),
         "our_role": ("slide2_our_role.txt", manual.get("summary", "")),
-        "member": ("slide3_member.txt", manual.get("summary", "")),
-        "period_and_price": ("slide3_period_and_price.txt", manual.get("summary", "")),
+        "member": ("slide3_member_comment.txt", manual.get("summary", "")),
         "project_overview": ("slide3_project_overview.txt", manual.get("summary", "")),
         "success": ("slide3_success.txt", manual.get("summary", "")),
         "challenge_slide3": ("slide3_challenge.txt", manual.get("summary", "")),
